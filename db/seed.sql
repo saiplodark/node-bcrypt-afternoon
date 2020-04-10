@@ -22,7 +22,7 @@ CREATE TABLE treasures
 (
   id SERIAL PRIMARY KEY,
   image_url varchar(120),
-  user_id int
+  user_id int REFERENCES users(id)
 );
 
 INSERT INTO treasures
